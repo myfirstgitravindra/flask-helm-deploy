@@ -13,3 +13,5 @@ service:
 resources: {}
 serviceAccount:
   create: false
+tests:
+  enabled: false
