@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask App</title>
+</head>
+<body>
+    {% if env == 'development' %}
+    <h1>Welcome to Dev Environment</h1>
+    {% else %}
+    <h1>Welcome to Production Environment</h1>
+    {% endif %}
+</body>
+</html>
