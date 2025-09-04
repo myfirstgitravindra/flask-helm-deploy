@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: ravindra806/my-python-app
+  tag: prod        # dev image tag
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 5000
+
+resources: {}
+serviceAccount:
+  create: false
